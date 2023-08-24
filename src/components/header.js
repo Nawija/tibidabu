@@ -33,7 +33,7 @@ const Header = () => {
         <header
             className={`
                     z-30 mx-auto sticky w-full top-0 text-center transition-[padding]
-            ${navbar ? "py-1" : "py-5"}`}
+            ${navbar ? "py-1" : "py-2 lg:py-5"}`}
         >
             <div
                 className="h-full w-full mx-auto absolute top-0 z-10 transition-colors duration-300
@@ -64,9 +64,9 @@ bg-white lg:bg-white/90 lg:backdrop-blur-xl shadow-lg"
                     </Link>
                     <div className="flex items-center justify-center space-x-3 lg:space-x-6 text-gray-800">
                         <ul
-                            className={`absolute h-max w-full top-full left-0 lg:static lg:flex space-y-6 lg:space-y-0 items-center justify-center space-x-3 lg:space-x-4 transition-all -z-10 ${
+                            className={`absolute h-max w-full top-[99%] left-0 lg:static lg:flex space-y-6 lg:space-y-0 items-center justify-center space-x-3 lg:space-x-4 transition-all text-lg lg:text-base -z-10 ${
                                 showMenu
-                                    ? "bg-white shadow-xl pb-6 pt-1"
+                                    ? "bg-white shadow-xl py-6"
                                     : " -translate-x-[200%] lg:-translate-x-[0]"
                             }`}
                         >
