@@ -1,29 +1,29 @@
 import React from "react";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
-import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
 
+import HeroImage from "../images/hero.jpg";
+import SHeroImage from "../images/shero.jpg";
+
 const IndexPage = () => {
+    const imageData = getImage(HeroImage);
     return (
         <>
             <Layout>
                 <div className="mx-auto text-center overflow-hidden relative text-white max-w-[1700px]">
                     {typeof window !== "undefined" &&
                     window.innerWidth >= 500 ? (
-                        <StaticImage
-                            loading="eager"
-                            imgClassName="xl:rounded-2xl"
-                            quality={100}
-                            placeholder="dominantColor"
-                            src="../images/hero.jpg"
+                        <GatsbyImage
+                            image={imageData}
+                            alt="Hero Image"
+                            className="xl:rounded-2xl"
                         />
                     ) : (
-                        <StaticImage
-                            loading="eager"
-                            quality={100}
-                            placeholder="dominantColor"
-                            src="../images/shero.jpg"
+                        <GatsbyImage
+                            image={getImage(SHeroImage)}
+                            alt="Small Hero Image"
                         />
                     )}
                     <div className="absolute top-[45%] lg:top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center flex-col">
