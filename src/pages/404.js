@@ -5,7 +5,7 @@ import Seo from "../components/seo";
 const NotFoundPage = () => {
     return (
         <Layout>
-            <p>hello 404</p>
+            <p className="py-12 font-bold">Hello 404</p>
         </Layout>
     );
 };

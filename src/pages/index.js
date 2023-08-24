@@ -8,7 +8,7 @@ const IndexPage = () => {
     return (
         <>
             <Layout>
-                <div className="mx-auto text-center  overflow-hidden relative text-white max-w-[1700px]">
+                <div className="mx-auto text-center overflow-hidden relative text-white max-w-[1700px]">
                     {typeof window !== "undefined" &&
                     window.innerWidth >= 500 ? (
                         <StaticImage
