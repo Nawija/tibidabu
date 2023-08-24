@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
+import { FiPhoneOutgoing } from "react-icons/fi";
 
 const Header = () => {
     const [showMenu, setMenu] = useState(false);
@@ -30,16 +31,16 @@ const Header = () => {
 
     return (
         <header
-            className="
-                    z-30 mx-auto sticky w-full top-0 text-center
-            "
+            className={`
+                    z-30 mx-auto sticky w-full top-0 text-center transition-[padding]
+            ${navbar ? "py-1" : "py-5"}`}
         >
             <div
                 className="h-full w-full mx-auto absolute top-0 z-10 transition-colors duration-300
 bg-white lg:bg-white/90 lg:backdrop-blur-xl shadow-lg"
             />
             <nav
-                className={`max-w-screen-xl mx-auto px-4 pt-2 flex flex-col items-center justify-between w-full transition-colors duration-100 -z-20 ${
+                className={`max-w-screen-2xl mx-auto px-4 flex flex-col items-center justify-between w-full transition-colors duration-100 -z-20 ${
                     showMenu ? "bg-white" : ""
                 }`}
             >
@@ -47,92 +48,81 @@ bg-white lg:bg-white/90 lg:backdrop-blur-xl shadow-lg"
                     <Link
                         to="/"
                         className="flex items-center justify-center"
-                        title="Logo Seovileo"
+                        title="Logo"
                         aria-label="Logo"
                     >
-                        <div className="h-auto w-10 ">
+                        <div className="h-auto w-36 lg:w-42 ">
                             <StaticImage
                                 quality={100}
                                 className="h-full w-full"
                                 loading="eager"
                                 placeholder="blurred"
                                 src="../images/favicon.png"
-                                alt="seovileo logo"
+                                alt="logo"
                             />
                         </div>
-                        <p
-                            className={`ml-1.5 -tracking-wide transition-colors font-bold ${
-                                navbar && !showMenu
-                                    ? "text-gray-700"
-                                    : "text-gray-700"
-                            }`}
-                        >
-                            Seovileo
-                        </p>
                     </Link>
-                    <div className="flex items-center justify-center space-x-3 pb-1 lg:space-x-6">
-                        <Link
-                            to="https://www.facebook.com/seovileo"
-                            target="_blank"
-                            className={`flex items-center justify-center border-blue-600 text-blue-700 rounded-lg text-base lg:text-sm font-semibold shadow-lg px-3 lg:px-4 py-2 border transition md:hover:scale-[.98] ${
-                                navbar && !showMenu
-                                    ? ""
-                                    : " shadow-blue-600/20 md:hover:shadow-xl"
+                    <div className="flex items-center justify-center space-x-3 lg:space-x-6 text-gray-800">
+                        <ul
+                            className={`absolute h-max w-full top-full left-0 lg:static lg:flex space-y-6 lg:space-y-0 items-center justify-center space-x-3 lg:space-x-4 transition-all -z-10 ${
+                                showMenu
+                                    ? "bg-white shadow-xl pb-6 pt-1"
+                                    : " -translate-x-[200%] lg:-translate-x-[0]"
                             }`}
                         >
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="lg:mr-1"
-                                width="20"
-                                height="20"
-                                viewBox="0 0 24 24"
-                                stroke-width="2"
-                                stroke="currentColor"
-                                fill="none"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            >
-                                <path
-                                    stroke="none"
-                                    d="M0 0h24v24H0z"
-                                    fill="none"
-                                ></path>
-                                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
-                            </svg>
-                            <p className="w-max lg:flex hidden">Facebook</p>
-                        </Link>
-                        <Link
-                            onClick={closeMenu}
-                            title="Kontakt"
-                            aria-label="kontakt"
-                            className={`flex items-center justify-center border-green-600 text-green-700 rounded-lg text-base lg:text-sm font-semibold shadow-lg px-3 lg:px-4 py-2 border transition md:hover:scale-[.98] ${
-                                navbar && !showMenu
-                                    ? ""
-                                    : " shadow-green-600/20 md:hover:shadow-xl"
-                            }`}
-                            to="tel:+48570037077"
-                        >
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="lg:mr-1"
-                                width="20"
-                                height="20"
-                                viewBox="0 0 24 24"
-                                stroke-width="2"
-                                stroke="currentColor"
-                                fill="none"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            >
-                                <path
-                                    stroke="none"
-                                    d="M0 0h24v24H0z"
-                                    fill="none"
-                                ></path>
-                                <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"></path>
-                            </svg>
-                            <p className="w-max lg:flex hidden">+48570037077</p>
-                        </Link>
+                            <li>
+                                <Link
+                                    to="/o-nas"
+                                    aria-label="O Nas"
+                                    title="O Nas"
+                                    className="p-2 font-medium"
+                                >
+                                    O Nas
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    to="/oferta"
+                                    aria-label="Oferta"
+                                    title="Oferta"
+                                    className="p-2 font-medium"
+                                >
+                                    Oferta
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    to="/galeria"
+                                    aria-label="Galeria"
+                                    title="Galeria"
+                                    className="p-2 font-medium"
+                                >
+                                    Galeria
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    to="/kontakt"
+                                    aria-label="Kontakt"
+                                    title="Kontakt"
+                                    className="p-2 font-medium"
+                                >
+                                    Kontakt
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    to="tel:727708275"
+                                    aria-label="zadzwoń"
+                                    title="Zadzwoń"
+                                    className=" relative flex items-center justify-center py-2 font-medium bg-[#5271FF] text-white px-4 rounded-lg w-max mx-auto"
+                                >
+                                    <FiPhoneOutgoing className="mr-2" />
+                                    <span>727 708 275</span>
+                                    <div className="absolute right-0 top-0 bg-pink-400 h-2 w-2 animate-ping rounded-full" />
+                                </Link>
+                            </li>
+                        </ul>
                         <button
                             aria-label="Menu"
                             onClick={handleMenu}
@@ -156,111 +146,6 @@ bg-white lg:bg-white/90 lg:backdrop-blur-xl shadow-lg"
                         </button>
                     </div>
                 </div>
-                <ul
-                    className={`absolute top-[99%] left-0 w-full text-center -z-10 ${
-                        showMenu
-                            ? "text-lg bg-white space-y-6 lg:space-y-0 opacity-100 transition pt-10 pb-12 lg:pb-2 -translate-y-0 "
-                            : "py-2 lg:opacity-100 lg:static lg:flex lg:flex-row lg:items-center lg:justify-around lg:mt-3 lg:translate-y-0 lg:py-0 opacity-0 -translate-y-full transition lg:z-10 lg:max-w-screen-lg lg:border-t"
-                    }`}
-                >
-                    <li className="mx-5 lg:my-0">
-                        <Link
-                            onClick={closeMenu}
-                            title="Usługi"
-                            aria-label="Usługi"
-                            className="relative"
-                            to="/"
-                        >
-                            <p className="px-2 py-1 font-semibold text-base lg:text-sm transition-colors">
-                                Home
-                            </p>
-                        </Link>
-                    </li>
-                    <li className="mx-5 lg:my-0">
-                        <Link
-                            onClick={closeMenu}
-                            title="Usługi"
-                            aria-label="Usługi"
-                            className="relative"
-                            to="/"
-                        >
-                            <p className="px-2 py-1 font-semibold text-base lg:text-sm transition-colors">
-                                Projekty
-                            </p>
-                        </Link>
-                    </li>
-                    <li className="mx-5 lg:my-0">
-                        <Link
-                            onClick={closeMenu}
-                            title="Usługi"
-                            aria-label="Usługi"
-                            className="relative"
-                            to="/"
-                        >
-                            <p className="px-2 py-1 font-semibold text-base lg:text-sm transition-colors">
-                                Funkcje
-                            </p>
-                        </Link>
-                    </li>
-
-                    <li className="mx-5 lg:my-0">
-                        <Link
-                            onClick={closeMenu}
-                            title="Usługi"
-                            aria-label="Usługi"
-                            className="relative"
-                            to="/"
-                        >
-                            <p className="px-2 py-1 font-semibold text-base lg:text-sm transition-colors">
-                                Usługi
-                            </p>
-                        </Link>
-                    </li>
-
-                    <li className="mx-5 lg:my-0 relative bg-yellow-500 rounded-md">
-                        <Link
-                            onClick={closeMenu}
-                            title="Darmowy Kalkulator"
-                            aria-label="Darmowy Kalkulator"
-                            className="relative"
-                            to="/darmowa-wycena"
-                        >
-                            <p className="px-4 py-2 lg:py-3 font-semibold text-base lg:text-sm transition-colors relative text-white tracking-wide">
-                                Kalkulator
-                                <span className="absolute bottom-0 translate-y-2/3 left-1/2 -translate-x-1/2 text-[7px] text-white font-bold tracking-widest bg-black px-2  rounded-md uppercase">
-                                    Darmowy
-                                </span>
-                            </p>
-                        </Link>
-                    </li>
-
-                    <li className="mx-5 lg:my-0">
-                        <Link
-                            onClick={closeMenu}
-                            title="Blog"
-                            aria-label="Blog"
-                            className="relative"
-                            to="/blog"
-                        >
-                            <p className="px-2 py-1 font-semibold text-base lg:text-sm transition-colors">
-                                Blog
-                            </p>
-                        </Link>
-                    </li>
-                    <li className="mx-5 lg:my-0">
-                        <Link
-                            onClick={closeMenu}
-                            title="Kontakt"
-                            aria-label="Kontakt"
-                            className="relative"
-                            to="/kontakt"
-                        >
-                            <p className="px-2 py-1 font-semibold text-base lg:text-sm transition-colors">
-                                Kontakt
-                            </p>
-                        </Link>
-                    </li>
-                </ul>
             </nav>
         </header>
     );
