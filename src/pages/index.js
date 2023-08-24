@@ -11,7 +11,7 @@ const IndexPage = () => {
                 <div className="mx-auto text-center overflow-hidden relative text-white max-w-[1700px]">
                     <StaticImage
                         loading="eager"
-                        imgClassName="xl:rounded-2xl hidden sm:flex"
+                        imgClassName="xl:rounded-2xl hidden sm:flex h-0 sm:h-max"
                         className="hidden sm:flex"
                         quality={100}
                         placeholder="dominantColor"
@@ -21,7 +21,7 @@ const IndexPage = () => {
                     <StaticImage
                         loading="eager"
                         quality={100}
-                        imgClassName="sm:hidden flex"
+                        imgClassName="sm:hidden"
                         className="sm:hidden flex"
                         placeholder="dominantColor"
                         src="../images/shero.jpg"
