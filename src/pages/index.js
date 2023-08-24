@@ -13,8 +13,7 @@ const IndexPage = () => {
                     window.innerWidth >= 500 ? (
                         <StaticImage
                             loading="eager"
-                            imgClassName="xl:rounded-2xl hidden sm:flex"
-                            className="hidden sm:flex"
+                            imgClassName="xl:rounded-2xl"
                             quality={100}
                             placeholder="dominantColor"
                             src="../images/hero.jpg"
@@ -22,8 +21,6 @@ const IndexPage = () => {
                     ) : (
                         <StaticImage
                             loading="eager"
-                            imgClassName="xl:rounded-2xl sm:hidden flex"
-                            className="sm:hidden flex"
                             quality={100}
                             placeholder="dominantColor"
                             src="../images/shero.jpg"
