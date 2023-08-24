@@ -14,7 +14,7 @@ export default NotFoundPage;
 
 export const Head = () => (
     <Seo
-        title="Nie znaleziono strony | Error 404 | Seovileo.pl"
+        title="Nie znaleziono strony | Error 404"
         siteUrl="https://seovileo.pl/404"
     />
 );
