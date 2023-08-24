@@ -21,7 +21,7 @@ const IndexPage = () => {
                     <StaticImage
                         loading="eager"
                         quality={100}
-                        imgClassName="sm:hidden"
+                        imgClassName="sm:hidden sm:h-0"
                         className="sm:hidden flex"
                         placeholder="dominantColor"
                         src="../images/shero.jpg"
