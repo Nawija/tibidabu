@@ -46,13 +46,13 @@ module.exports = {
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
-                name: `Seovileo`,
+                name: `Tibidabu`,
                 short_name: `starter`,
                 start_url: `/`,
-                background_color: `#0C0904`,
-                theme_color: `#0C0904`,
+                background_color: `#5271FF`,
+                theme_color: `#5271FF`,
                 display: `standalone`,
-                icon: `src/images/favicon.png`,
+                icon: `src/images/logo.jpg`,
             },
         },
     ],
