@@ -2,7 +2,6 @@ import React from "react";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 import { StaticImage } from "gatsby-plugin-image";
-import { Link } from "gatsby";
 
 const IndexPage = () => {
     return (
@@ -222,85 +221,92 @@ const IndexPage = () => {
                         <br /> + 48 727 708 275
                     </p>
                 </div>
-                <section className="max-w-screen-xl flex flex-col items-start justify-center mx-auto py-12">
-                    <div className="px-12 pb-6">
-                        <div className="relative pl-5 mb-3">
-                            <h2 className="text-2xl font-bold">
-                                Where does it come from? - dla dziecka
-                            </h2>
-                            <div className="absolute rounded-lg top-0 left-0 bg-[#5271FF] h-full w-2.5" />
+                <section className="relative  py-12">
+                    <div className="max-w-screen-xl flex flex-col items-start justify-center mx-auto">
+                        <div className="px-12 pb-6">
+                            <div className="relative pl-5 mb-3">
+                                <h2 className="text-2xl font-bold">
+                                    Where does it come from? - dla dziecka
+                                </h2>
+                                <div className="absolute rounded-lg top-0 left-0 bg-[#5271FF] h-full w-2.5" />
+                            </div>
+                            <p>
+                                Contrary to popular belief, Lorem Ipsum is not
+                                simply random text. It has roots in a piece of
+                                classical Latin literature from 45 BC, making it
+                                over 2000 years old. Richard McClintock, a Latin
+                                professor at Hampden-Sydney College in Virginia,
+                                looked up one of the more obscure Latin words,
+                                consectetur, from a Lorem Ipsum passage, and
+                                going through the cites of the word in classical
+                                literature, discovered the undoubtable source.
+                                Lorem Ipsum comes from sections 1.10.32 and
+                                1.10.33 of "de Finibus Bonorum et Malorum" (The
+                                Extremes of Good and Evil) by Cicero, written in
+                                45 BC. This book is a treatise on the theory of
+                                ethics, very popular during the Renaissance. The
+                                first line of Lorem Ipsum, "Lorem ipsum dolor
+                                sit amet..", comes from a line in section
+                                1.10.32
+                            </p>
                         </div>
-                        <p>
-                            Contrary to popular belief, Lorem Ipsum is not
-                            simply random text. It has roots in a piece of
-                            classical Latin literature from 45 BC, making it
-                            over 2000 years old. Richard McClintock, a Latin
-                            professor at Hampden-Sydney College in Virginia,
-                            looked up one of the more obscure Latin words,
-                            consectetur, from a Lorem Ipsum passage, and going
-                            through the cites of the word in classical
-                            literature, discovered the undoubtable source. Lorem
-                            Ipsum comes from sections 1.10.32 and 1.10.33 of "de
-                            Finibus Bonorum et Malorum" (The Extremes of Good
-                            and Evil) by Cicero, written in 45 BC. This book is
-                            a treatise on the theory of ethics, very popular
-                            during the Renaissance. The first line of Lorem
-                            Ipsum, "Lorem ipsum dolor sit amet..", comes from a
-                            line in section 1.10.32
-                        </p>
-                    </div>
-                    <div className="px-12 pb-6">
-                        <div className="relative pl-5 mb-3">
-                            <h2 className="text font-bold">
-                                Where does it come from? - dla dziecka
-                            </h2>
-                            <div className="absolute rounded-lg top-1/2 -translate-y-1/2 left-0 bg-[#19C0B6] h-3 w-3" />
+                        <div className="px-12 pb-6">
+                            <div className="relative pl-5 mb-3">
+                                <h2 className="text font-bold">
+                                    Where does it come from? - dla dziecka
+                                </h2>
+                                <div className="absolute rounded-lg top-1/2 -translate-y-1/2 left-0 bg-[#19C0B6] h-3 w-3" />
+                            </div>
+                            <p>
+                                Contrary to popular belief, Lorem Ipsum is not
+                                simply random text. It has roots in a piece of
+                                classical Latin literature from 45 BC, making it
+                                over 2000 years old. Richard McClintock, a Latin
+                                professor at Hampden-Sydney College in Virginia,
+                                looked up one of the more obscure Latin words,
+                                consectetur, from a Lorem Ipsum passage, and
+                                going through the cites of the word in classical
+                                literature, discovered the undoubtable source.
+                                Lorem Ipsum comes from sections 1.10.32 and
+                                1.10.33 of "de Finibus Bonorum et Malorum" (The
+                                Extremes of Good and Evil) by Cicero, written in
+                                45 BC. This book is a treatise on the theory of
+                                ethics, very popular during the Renaissance. The
+                                first line of Lorem Ipsum, "Lorem ipsum dolor
+                                sit amet..", comes from a line in section
+                                1.10.32
+                            </p>
                         </div>
-                        <p>
-                            Contrary to popular belief, Lorem Ipsum is not
-                            simply random text. It has roots in a piece of
-                            classical Latin literature from 45 BC, making it
-                            over 2000 years old. Richard McClintock, a Latin
-                            professor at Hampden-Sydney College in Virginia,
-                            looked up one of the more obscure Latin words,
-                            consectetur, from a Lorem Ipsum passage, and going
-                            through the cites of the word in classical
-                            literature, discovered the undoubtable source. Lorem
-                            Ipsum comes from sections 1.10.32 and 1.10.33 of "de
-                            Finibus Bonorum et Malorum" (The Extremes of Good
-                            and Evil) by Cicero, written in 45 BC. This book is
-                            a treatise on the theory of ethics, very popular
-                            during the Renaissance. The first line of Lorem
-                            Ipsum, "Lorem ipsum dolor sit amet..", comes from a
-                            line in section 1.10.32
-                        </p>
-                    </div>
-                    <div className="px-12 pb-6">
-                        <div className="relative pl-5 mb-3">
-                            <h2 className="text font-bold">
-                                Where does it come from? - dla dziecka
-                            </h2>
-                            <div className="absolute rounded-lg top-1/2 -translate-y-1/2 left-0 bg-[#19C0B6] h-3 w-3" />
+                        <div className="px-12 pb-6">
+                            <div className="relative pl-5 mb-3">
+                                <h2 className="text font-bold">
+                                    Where does it come from? - dla dziecka
+                                </h2>
+                                <div className="absolute rounded-lg top-1/2 -translate-y-1/2 left-0 bg-[#19C0B6] h-3 w-3" />
+                            </div>
+                            <p>
+                                Contrary to popular belief, Lorem Ipsum is not
+                                simply random text. It has roots in a piece of
+                                classical Latin literature from 45 BC, making it
+                                over 2000 years old. Richard McClintock, a Latin
+                                professor at Hampden-Sydney College in Virginia,
+                                looked up one of the more obscure Latin words,
+                                consectetur, from a Lorem Ipsum passage, and
+                                going through the cites of the word in classical
+                                literature, discovered the undoubtable source.
+                                Lorem Ipsum comes from sections 1.10.32 and
+                                1.10.33 of "de Finibus Bonorum et Malorum" (The
+                                Extremes of Good and Evil) by Cicero, written in
+                                45 BC. This book is a treatise on the theory of
+                                ethics, very popular during the Renaissance. The
+                                first line of Lorem Ipsum, "Lorem ipsum dolor
+                                sit amet..", comes from a line in section
+                                1.10.32
+                            </p>
                         </div>
-                        <p>
-                            Contrary to popular belief, Lorem Ipsum is not
-                            simply random text. It has roots in a piece of
-                            classical Latin literature from 45 BC, making it
-                            over 2000 years old. Richard McClintock, a Latin
-                            professor at Hampden-Sydney College in Virginia,
-                            looked up one of the more obscure Latin words,
-                            consectetur, from a Lorem Ipsum passage, and going
-                            through the cites of the word in classical
-                            literature, discovered the undoubtable source. Lorem
-                            Ipsum comes from sections 1.10.32 and 1.10.33 of "de
-                            Finibus Bonorum et Malorum" (The Extremes of Good
-                            and Evil) by Cicero, written in 45 BC. This book is
-                            a treatise on the theory of ethics, very popular
-                            during the Renaissance. The first line of Lorem
-                            Ipsum, "Lorem ipsum dolor sit amet..", comes from a
-                            line in section 1.10.32
-                        </p>
                     </div>
+                    <div className="border-[#19C0B6] border-2 border-dashed w-52 h-52 rounded-full  absolute bottom-0 left-0 -z-20 -translate-x-1/2" />
+                    <div className="border-[#19C0B6] border-2 border-dashed w-80 h-80 rounded-full  absolute top-1/4 right-0 -z-20 translate-x-1/2" />
                 </section>
             </Layout>
         </>
