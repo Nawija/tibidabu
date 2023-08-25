@@ -5,8 +5,8 @@ module.exports = {
     siteMetadata: {
         title: ``,
         description: ``,
-        author: `lancuckiesady`,
-        siteUrl: `http://lancuckiesady.com/`,
+        author: `Tibidabu`,
+        siteUrl: `https://tibidabu.pl`,
     },
     plugins: [
         {
@@ -49,8 +49,8 @@ module.exports = {
                 name: `Tibidabu`,
                 short_name: `starter`,
                 start_url: `/`,
-                background_color: `#5271FF`,
-                theme_color: `#5271FF`,
+                background_color: `#19C0B6`,
+                theme_color: `#19C0B6`,
                 display: `standalone`,
                 icon: `src/images/logo.jpg`,
             },
