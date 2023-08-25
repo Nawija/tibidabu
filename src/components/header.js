@@ -67,7 +67,7 @@ bg-white lg:bg-white/90 lg:backdrop-blur-xl shadow-lg"
                             className={`absolute h-max w-full top-[99%] left-0 lg:static lg:flex space-y-6 lg:space-y-0 items-center justify-center space-x-3 lg:space-x-4 transition-all text-lg lg:text-base -z-10 ${
                                 showMenu
                                     ? "bg-white shadow-xl py-6"
-                                    : " -translate-x-[200%] lg:-translate-x-[0]"
+                                    : " -translate-y-[50%] scale-0 lg:scale-100 lg:-translate-y-[0]"
                             }`}
                         >
                             <li>

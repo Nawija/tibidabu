@@ -12,13 +12,13 @@ const IndexPage = () => {
                     <div>
                         <StaticImage
                             loading="eager"
-                            className="min-h-[22rem]"
+                            className="min-h-[25rem]"
                             quality={100}
                             placeholder="blurred"
                             src="../images/hero.jpg"
                         />
                     </div>
-                    <div className="absolute top-[32%] left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center flex-col">
+                    <div className="absolute top-[25%] left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center flex-col">
                         <p className=" bg-[#19C0B6] py-1.5 px-3 lg:py-2 lg:px-4 text-base tracking-wider lg:text-lg font-medium w-max rounded-lg">
                             WITAJ W TIBIDABU
                         </p>
@@ -27,13 +27,13 @@ const IndexPage = () => {
                         </h1>
                     </div>
                 </div>
-                <div className="text-gray-800 text-center pt-12 lg:pb-12 max-w-screen-xl mx-auto">
-                    <h2 className="text-3xl font-bold">
+                <div className="text-gray-800 text-center lg:pb-12 max-w-screen-xl mx-auto">
+                    <h2 className="text-xl lg:text-3xl font-bold">
                         Nasza
                         <br />
                         <span className="text-[#5271FF]">Oferta</span>
                     </h2>
-                    <div className="flex flex-col lg:flex-row items-center justify-center pt-12 lg:pt-24 text-start">
+                    <div className="flex flex-col lg:flex-row items-center justify-center pt-10 lg:pt-24 text-start">
                         <div className="flex flex-col items-center justify-center w-full lg:w-1/2">
                             <div className="py-5 lg:pb-10 lg:px-0 px-10 lg:pl-12">
                                 <h3 className="font-bold">Why do we use it?</h3>
@@ -66,7 +66,7 @@ const IndexPage = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="w-full px-16">
+                        <div className="w-full px-16 py-2">
                             <StaticImage
                                 quality={100}
                                 placeholder="dominantColor"
@@ -108,15 +108,19 @@ const IndexPage = () => {
                     </div>
                 </div>
 
-                <section className="max-w-screen-xl mx-auto pt-6">
+                <section className="max-w-screen-2xl mx-auto pb-10">
                     <div className="flex flex-col lg:flex-row items-center justify-center">
-                        <div className="lg:w-1/2">
+                        <div className="relative lg:w-1/2">
                             <StaticImage quality={100} src="../images/x1.jpg" />
+                            <div className="" />
                         </div>
                         <div className="flex flex-col items-start justify-center lg:w-1/2 p-12">
-                            <h2 className="text-lg font-bold pb-2">
-                                Why do we use it?
-                            </h2>
+                            <div className="relative pl-5 mb-3">
+                                <h2 className="text-lg font-bold">
+                                    Why do we use it??
+                                </h2>
+                                <div className="absolute rounded-lg top-0 left-0 bg-[#5271FF] h-full w-2.5" />
+                            </div>
                             <p>
                                 It is a long established fact that a reader will
                                 be distracted by the readable content of a page
@@ -141,9 +145,12 @@ const IndexPage = () => {
                             <StaticImage quality={100} src="../images/x2.jpg" />
                         </div>
                         <div className="flex flex-col items-start justify-center lg:w-1/2 p-12">
-                            <h2 className="text-lg font-bold pb-2">
-                                Why do we use it?
-                            </h2>
+                            <div className="relative pl-5 mb-3">
+                                <h2 className="text-lg font-bold">
+                                    Why do we use it??
+                                </h2>
+                                <div className="absolute rounded-lg top-0 left-0 bg-[#19C0B6] h-full w-2.5" />
+                            </div>
                             <p>
                                 It is a long established fact that a reader will
                                 be distracted by the readable content of a page
@@ -168,9 +175,12 @@ const IndexPage = () => {
                             <StaticImage quality={100} src="../images/x3.jpg" />
                         </div>
                         <div className="flex flex-col items-start justify-center lg:w-1/2 p-12">
-                            <h2 className="text-lg font-bold pb-2">
-                                Why do we use it?
-                            </h2>
+                            <div className="relative pl-5 mb-3">
+                                <h2 className="text-lg font-bold">
+                                    Why do we use it??
+                                </h2>
+                                <div className="absolute rounded-lg top-0 left-0 bg-[#5271FF] h-full w-2.5" />
+                            </div>
                             <p>
                                 It is a long established fact that a reader will
                                 be distracted by the readable content of a page
