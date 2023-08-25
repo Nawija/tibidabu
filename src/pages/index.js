@@ -215,10 +215,10 @@ const IndexPage = () => {
                     </div>
                 </section>
                 <div className="relative mx-auto text-center py-8">
-                    <StaticImage quality={100} src="../images/tlo.jpg" />
+                    <StaticImage quality={100} imgClassName="min-h-[25rem]" className="min-h-[25rem]" src="../images/tlo.jpg" />
                     <p className="text-white text-4xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-semibold">
                         Zadzwoń do nas!
-                        <br /> + 48 727 708 275
+                        <br /> <span className="w-max">+48 727-708-275</span>
                     </p>
                 </div>
                 <section className="relative  py-12">
