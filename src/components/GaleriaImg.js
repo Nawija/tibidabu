@@ -70,24 +70,25 @@ const Galeria = () => {
     };
 
     return (
-        <section className="py-4 relative">
+        <section className="pb-4 relative -mt-4">
             <section className="text-gray-700 body-font max-w-screen-xl mx-auto">
                 <div className="px-5 flex items-start justify-start text-start ml-auto">
                     <div className="flex flex-wrap sm:mt-6">
                         {data.allDatoCmsGaleriaa.edges.map(({ node }) => (
-                            <div className="px-0.5" key={node.img}>
+                            <div className="px-0.5 py-1 lg:py-0 mx-auto lg:mx-0" key={node.img}>
                                 <button onClick={() => openModal(node.img)}>
-                                    <div className="relative h-56 w-72 md:h-52 md:w-60 mx-auto group overflow-hidden">
+                                    <div className="relative h-56 w-80 md:h-52 md:w-60 mx-auto group overflow-hidden">
                                         <GatsbyImage
                                             className="object-cover object-center w-full h-full block"
                                             image={getImage(node.img)}
+                                            imgClassName="rounded-lg"
                                             alt="tibidabu"
                                             title="Tibidabu"
                                             layout="fixed"
                                             onLoad={handleImageLoaded}
                                         />
                                         {!imageLoaded && <Spinner />}
-                                        <div className="bg-white/70 backdrop-blur-sm text-gray-800 absolute inset-0 border-2 border-yellow-400 flex items-center justify-center scale-0 lg:group-hover:scale-100 transition-transform duration-300 delay-100">
+                                        <div className="bg-white/70 backdrop-blur-sm text-gray-800 absolute inset-0 border-2 border-yellow-400 rounded-lg flex items-center justify-center scale-0 lg:group-hover:scale-100 transition-transform duration-300 delay-100">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 width="24"

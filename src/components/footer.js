@@ -4,13 +4,13 @@ import { StaticImage } from "gatsby-plugin-image";
 
 const Footer = () => (
     <div className="bg-gray-800 text-gray-400 w-full z-50">
-        <footer className="mx-auto max-w-screen-2xl px-4 md:px-8">
+        <footer className=" mx-auto max-w-screen-2xl px-4 md:px-8">
             <div className="mb-16 grid grid-cols-2 gap-12 pt-10 md:grid-cols-4 lg:grid-cols-6 lg:gap-8 lg:pt-12">
                 <div className="col-span-full lg:col-span-2">
                     <div className=" ml-4 mb-4 lg:-mt-2">
                         <Link
                             to="/"
-                            className="flex-col hover:scale-105 transition-all duration-300 flex h-auto w-20 items-center justify-center"
+                            className="flex-col hover:scale-105 transition-all duration-300 flex h-auto w-32 items-center justify-center"
                             aria-label="logo"
                         >
                             <StaticImage
@@ -20,15 +20,14 @@ const Footer = () => (
                                 src="../images/favicon.png"
                                 alt="seovileo"
                             />
-                            <p className="font-bold text-gray-300 transition-all duration-200 text-2xl w-max -mt-1">
-                                Seovileo
-                            </p>
                         </Link>
                     </div>
 
                     <p className="mb-6  sm:pr-8">
-                        Stwórz swoją idealną stronę internetową z niezależnym
-                        freelancerem
+                        Contrary to popular belief, Lorem Ipsum is not simply
+                        random text. It has roots in a piece of classical Latin
+                        literature from 45 BC, making it over 2000 years old.
+                        Richard McClintoc
                     </p>
 
                     <div className="flex">
@@ -122,25 +121,33 @@ seovileo@email.com"
                                 to="/"
                                 className=" transition linkFooter duration-100 hoverLink"
                             >
-                                Home
+                                Strona Główna
                             </Link>
                         </div>
 
                         <div>
                             <Link
-                                to="/projekty"
+                                to="/o-nas"
                                 className=" transition duration-100 hoverLink linkFooter"
                             >
-                                Projekty
+                                O Nas
                             </Link>
                         </div>
 
                         <div>
                             <Link
-                                to="/uslugi"
+                                to="/oferta"
                                 className=" transition duration-100 hoverLink linkFooter"
                             >
-                                Usługi
+                                Oferta
+                            </Link>
+                        </div>
+                        <div>
+                            <Link
+                                to="/galeria"
+                                className=" transition duration-100 hoverLink linkFooter"
+                            >
+                                Galeria
                             </Link>
                         </div>
                         <div>
@@ -156,33 +163,7 @@ seovileo@email.com"
 
                 <div>
                     <div className="mb-4 font-bold uppercase tracking-widest text-gray-100">
-                        Portfolio
-                    </div>
-
-                    <nav className="flex flex-col gap-4">
-                        <div>
-                            <Link
-                                to="/projekty"
-                                className=" transition duration-100 hoverLink linkFooter"
-                            >
-                                Projekty
-                            </Link>
-                        </div>
-
-                        <div>
-                            <Link
-                                to="/budowa"
-                                className=" transition duration-100 hoverLink linkFooter"
-                            >
-                                Praca
-                            </Link>
-                        </div>
-                    </nav>
-                </div>
-
-                <div>
-                    <div className="mb-4 font-bold uppercase tracking-widest text-gray-100">
-                        Support
+                        Pomoc
                     </div>
 
                     <nav className="flex flex-col gap-4">

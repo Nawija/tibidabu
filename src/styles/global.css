@@ -2,4 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-
+.changeColor {
+    animation: changeColor 4s infinite alternate-reverse forwards;
+}
+@keyframes changeColor {
+    0% {
+        color: #e6b000; /* text-gray-500 */
+    }
+    100% {
+        color: #5271ff; /* text-blue-500 */
+    }
+}
