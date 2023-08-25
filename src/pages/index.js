@@ -107,7 +107,7 @@ const IndexPage = () => {
                     </div>
                 </div>
 
-                <section className="max-w-screen-2xl mx-auto pb-10">
+                <section className="max-w-screen-2xl mx-auto py-10">
                     <div className="flex flex-col lg:flex-row items-center justify-center">
                         <div className="relative lg:w-1/2">
                             <StaticImage

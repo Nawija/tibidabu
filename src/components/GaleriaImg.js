@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import Modal from "react-modal";
 import { graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import Spinner from "./Spinner";
 
-import "../styles/Modal.css"
+import "../styles/Modal.css";
 
 const Galeria = () => {
     const data = useStaticQuery(graphql`
@@ -45,7 +46,7 @@ const Galeria = () => {
         setZoomFactor((prevZoom) => prevZoom + 0.3);
     };
     const handleUnZoomButtonClick = () => {
-        setZoomFactor(prevZoom => Math.max(prevZoom - 0.3, 1));
+        setZoomFactor((prevZoom) => Math.max(prevZoom - 0.3, 1));
     };
 
     const goToNextImage = () => {
@@ -62,57 +63,63 @@ const Galeria = () => {
         setCurrentImageIndex(newIndex);
     };
 
+    const [imageLoaded, setImageLoaded] = useState(false);
+
+    const handleImageLoaded = () => {
+        setImageLoaded(true);
+    };
+
     return (
         <section className="py-4 relative">
-
-                <section className="text-gray-700 body-font max-w-screen-xl mx-auto">
-                    <div className="px-5 flex items-start justify-start text-start ml-auto">
-                        <div className="flex flex-wrap sm:mt-6">
-                            {data.allDatoCmsGaleriaa.edges.map(({ node }) => (
-                                <div className=" mx-auto py-0.5" key={node.img}>
-                                    <button onClick={() => openModal(node.img)}>
-                                        <div className="relative h-56 w-72 md:h-52 md:w-60 mx-auto group overflow-hidden">
-                                            <GatsbyImage
-                                                className="object-cover object-center w-full h-full block"
-                                                image={getImage(node.img)}
-                                                alt="tibidabu"
-                                                title="Tibidabu"
-                                                layout="fixed"
-                                            />
-                                            <div className="bg-white/70 backdrop-blur-sm text-[#3d59d1] absolute inset-0 border-2 border-yellow-400 flex items-center justify-center scale-0 lg:group-hover:scale-100 transition-transform duration-300 delay-100">
-                                                <svg
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    width="24"
-                                                    height="24"
-                                                    viewBox="0 0 24 24"
-                                                    stroke-width="2"
-                                                    stroke="currentColor"
+            <section className="text-gray-700 body-font max-w-screen-xl mx-auto">
+                <div className="px-5 flex items-start justify-start text-start ml-auto">
+                    <div className="flex flex-wrap sm:mt-6">
+                        {data.allDatoCmsGaleriaa.edges.map(({ node }) => (
+                            <div className=" mx-auto py-0.5" key={node.img}>
+                                <button onClick={() => openModal(node.img)}>
+                                    <div className="relative h-56 w-72 md:h-52 md:w-60 mx-auto group overflow-hidden">
+                                        <GatsbyImage
+                                            className="object-cover object-center w-full h-full block"
+                                            image={getImage(node.img)}
+                                            alt="tibidabu"
+                                            title="Tibidabu"
+                                            layout="fixed"
+                                            onLoad={handleImageLoaded}
+                                        />
+                                        {!imageLoaded && <Spinner />}
+                                        <div className="bg-white/70 backdrop-blur-sm text-[#3d59d1] absolute inset-0 border-2 border-yellow-400 flex items-center justify-center scale-0 lg:group-hover:scale-100 transition-transform duration-300 delay-100">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                stroke-width="2"
+                                                stroke="currentColor"
+                                                fill="none"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            >
+                                                <path
+                                                    stroke="none"
+                                                    d="M0 0h24v24H0z"
                                                     fill="none"
-                                                    stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                >
-                                                    <path
-                                                        stroke="none"
-                                                        d="M0 0h24v24H0z"
-                                                        fill="none"
-                                                    ></path>
-                                                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
-                                                    <path d="M7 10l6 0"></path>
-                                                    <path d="M10 7l0 6"></path>
-                                                    <path d="M21 21l-6 -6"></path>
-                                                </svg>
-                                                <p className="font-medium">
-                                                    Zobacz
-                                                </p>
-                                            </div>
+                                                ></path>
+                                                <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+                                                <path d="M7 10l6 0"></path>
+                                                <path d="M10 7l0 6"></path>
+                                                <path d="M21 21l-6 -6"></path>
+                                            </svg>
+                                            <p className="font-medium">
+                                                Zobacz
+                                            </p>
                                         </div>
-                                    </button>
-                                </div>
-                            ))}
-                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                        ))}
                     </div>
-                </section>
-
+                </div>
+            </section>
 
             <Modal
                 isOpen={isModalOpen}
