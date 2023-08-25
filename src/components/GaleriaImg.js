@@ -75,7 +75,7 @@ const Galeria = () => {
                 <div className="px-5 flex items-start justify-start text-start ml-auto">
                     <div className="flex flex-wrap sm:mt-6">
                         {data.allDatoCmsGaleriaa.edges.map(({ node }) => (
-                            <div className=" mx-auto py-0.5" key={node.img}>
+                            <div className="px-0.5" key={node.img}>
                                 <button onClick={() => openModal(node.img)}>
                                     <div className="relative h-56 w-72 md:h-52 md:w-60 mx-auto group overflow-hidden">
                                         <GatsbyImage
@@ -87,7 +87,7 @@ const Galeria = () => {
                                             onLoad={handleImageLoaded}
                                         />
                                         {!imageLoaded && <Spinner />}
-                                        <div className="bg-white/70 backdrop-blur-sm text-[#3d59d1] absolute inset-0 border-2 border-yellow-400 flex items-center justify-center scale-0 lg:group-hover:scale-100 transition-transform duration-300 delay-100">
+                                        <div className="bg-white/70 backdrop-blur-sm text-gray-800 absolute inset-0 border-2 border-yellow-400 flex items-center justify-center scale-0 lg:group-hover:scale-100 transition-transform duration-300 delay-100">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 width="24"
@@ -131,7 +131,6 @@ const Galeria = () => {
                 <button className="close-button" onClick={closeModal}>
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="icon icon-tabler icon-tabler-x"
                         width="24"
                         height="24"
                         viewBox="0 0 24 24"
@@ -149,7 +148,6 @@ const Galeria = () => {
                 <button className="zoom-button" onClick={handleZoomButtonClick}>
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="icon icon-tabler icon-tabler-zoom-in"
                         width="24"
                         height="24"
                         viewBox="0 0 24 24"
@@ -176,7 +174,6 @@ const Galeria = () => {
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="icon icon-tabler icon-tabler-zoom-in"
                         width="24"
                         height="24"
                         viewBox="0 0 24 24"
@@ -199,7 +196,6 @@ const Galeria = () => {
                 <button className="prev-button" onClick={goToPreviousImage}>
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="icon icon-tabler icon-tabler-chevron-left"
                         width="24"
                         height="24"
                         viewBox="0 0 24 24"
@@ -220,7 +216,6 @@ const Galeria = () => {
                 <button className="next-button" onClick={goToNextImage}>
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="icon icon-tabler icon-tabler-chevron-right"
                         width="24"
                         height="24"
                         viewBox="0 0 24 24"
