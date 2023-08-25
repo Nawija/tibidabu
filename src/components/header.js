@@ -32,7 +32,7 @@ const Header = () => {
     return (
         <header
             className={`
-                    z-30 mx-auto sticky w-full top-0 text-center transition-[padding]
+                    z-50 mx-auto sticky w-full top-0 text-center transition-[padding]
             ${navbar ? "py-1" : "py-2 lg:py-5"}`}
         >
             <div

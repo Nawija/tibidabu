@@ -115,8 +115,8 @@ const IndexPage = () => {
                                 quality={100}
                                 src="../images/x1.jpg"
                             />
-                            <div className="bg-[#FF5151] w-32 h-32 rounded-full round  absolute bottom-0 right-0 -z-20 translate-y-1/2 translate-x-1/2" />
-                            <div className="border-[#19C0B6] border-2 border-dashed w-52 h-52 rounded-full round  absolute bottom-0 right-0 -z-20 translate-y-1/2 translate-x-1/2" />
+                            <div className="bg-[#FF5151] w-20 h-20 md:w-32 md:h-32 rounded-full round  absolute bottom-0 right-0 -z-20 translate-y-1/2 translate-x-1/2" />
+                            <div className="border-[#19C0B6] border-2 border-dashed w-32 h-32 md:w-52 md:h-52 rounded-full round  absolute bottom-0 right-0 -z-20 translate-y-1/2 translate-x-1/2" />
                         </div>
                         <div className="flex flex-col items-start justify-center lg:w-1/2 p-12">
                             <div className="relative pl-5 mb-3">
@@ -151,8 +151,8 @@ const IndexPage = () => {
                                 imgClassName="rounded-[50px]"
                                 src="../images/x2.jpg"
                             />
-                            <div className="bg-[#FF5151] w-32 h-32 rounded-full  absolute bottom-0 left-0 -z-20 translate-y-1/2 -translate-x-1/2" />
-                            <div className="border-[#19C0B6] border-2 border-dashed w-52 h-52 rounded-full  absolute bottom-0 left-0 -z-20 translate-y-1/2 -translate-x-1/2" />
+                            <div className="bg-[#FF5151] w-20 h-20 md:w-32 md:h-32 rounded-full  absolute bottom-0 left-0 -z-20 translate-y-1/2 -translate-x-1/2" />
+                            <div className="border-[#19C0B6] border-2 border-dashed w-32 h-32 md:w-52 md:h-52 rounded-full  absolute bottom-0 left-0 -z-20 translate-y-1/2 -translate-x-1/2" />
                         </div>
                         <div className="flex flex-col items-start justify-center lg:w-1/2 p-12">
                             <div className="relative pl-5 mb-3">
@@ -181,12 +181,14 @@ const IndexPage = () => {
                     </div>
 
                     <div className="flex flex-col lg:flex-row items-center justify-center">
-                        <div className="lg:w-1/2">
+                        <div className="relative lg:w-1/2">
                             <StaticImage
                                 quality={100}
                                 imgClassName="rounded-[50px]"
                                 src="../images/x3.jpg"
                             />
+                            <div className="bg-[#FF5151] lg:hidden w-20 h-20 md:w-32 md:h-32 rounded-full  absolute bottom-0 left-0 -z-20 translate-y-1/2 translate-x-1/2" />
+                            <div className="border-[#19C0B6] lg:hidden border-2 border-dashed w-32 h-32 md:w-52 md:h-52 rounded-full  absolute bottom-0 right-0 -z-20 translate-y-1/2 translate-x-1/2" />
                         </div>
                         <div className="flex flex-col items-start justify-center lg:w-1/2 p-12">
                             <div className="relative pl-5 mb-3">
@@ -214,14 +216,22 @@ const IndexPage = () => {
                         </div>
                     </div>
                 </section>
-                <div className="relative mx-auto text-center py-8">
-                    <StaticImage quality={100} imgClassName="min-h-[25rem]" className="min-h-[25rem]" src="../images/tlo.jpg" />
-                    <p className="text-white text-4xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-semibold">
+                <div className="relative mx-auto text-center -mt-6 lg:py-8">
+                    <StaticImage
+                        quality={100}
+                        imgClassName="min-h-[12rem]"
+                        className="min-h-[14rem]"
+                        src="../images/tlo.jpg"
+                    />
+                    <p className="text-white text-3xl sm:text-4xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-semibold w-max">
                         Zadzwoń do nas!
-                        <br /> <span className="w-max">+48 727-708-275</span>
+                        <br />{" "}
+                        <span className="text-2xl sm:text-3xl">
+                            +48 727-708-275
+                        </span>
                     </p>
                 </div>
-                <section className="relative  py-12">
+                <section className="relative py-12 max-w-screen-2xl mx-auto">
                     <div className="max-w-screen-xl flex flex-col items-start justify-center mx-auto">
                         <div className="px-12 pb-6">
                             <div className="relative pl-5 mb-3">
@@ -305,8 +315,8 @@ const IndexPage = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="border-[#19C0B6] border-2 border-dashed w-52 h-52 rounded-full  absolute bottom-0 left-0 -z-20 -translate-x-1/2" />
-                    <div className="border-[#19C0B6] border-2 border-dashed w-80 h-80 rounded-full  absolute top-1/4 right-0 -z-20 translate-x-1/2" />
+                    <div className="border-[#19C0B6] border-2 border-dashed w-32 h-32 md:w-52 md:h-52 rounded-full  absolute bottom-0 left-0 -z-20 lg:-translate-x-1/2 -translate-x-[82%]" />
+                    <div className="border-[#19C0B6] border-2 border-dashed w-80 h-80 rounded-full  absolute top-1/4 right-0 -z-20 lg:translate-x-1/2 translate-x-[82%]" />
                 </section>
             </Layout>
         </>
