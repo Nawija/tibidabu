@@ -12,7 +12,7 @@ module.exports = {
         {
             resolve: "gatsby-source-datocms",
             options: {
-                apiToken: "949a6d3042f4035b35f2f0631e3fb3",
+                apiToken: "f1a313f4c2495df96cd4805efd50e5",
             },
         },
         "gatsby-plugin-image",
@@ -31,7 +31,7 @@ module.exports = {
         {
             resolve: `gatsby-plugin-nprogress`,
             options: {
-                showSpinner: true,
+                showSpinner: false,
                 minimum: 0.1,
             },
         },
