@@ -14,7 +14,7 @@ const IndexPage = () => {
                             loading="eager"
                             className="min-h-[22rem]"
                             quality={100}
-                            placeholder="dominantColor"
+                            placeholder="blurred"
                             src="../images/hero.jpg"
                         />
                     </div>
