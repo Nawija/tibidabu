@@ -27,15 +27,15 @@ const IndexPage = () => {
                         </h1>
                     </div>
                 </div>
-                <div className="text-gray-800 text-center pb-12 max-w-screen-xl mx-auto">
+                <div className="text-gray-800 text-center pt-12 lg:pb-12 max-w-screen-xl mx-auto">
                     <h2 className="text-3xl font-bold">
                         Nasza
                         <br />
                         <span className="text-[#5271FF]">Oferta</span>
                     </h2>
-                    <div className="flex items-center justify-center pt-24 text-start">
+                    <div className="flex flex-col lg:flex-row items-center justify-center pt-12 lg:pt-24 text-start">
                         <div className="flex flex-col items-center justify-center w-full lg:w-1/2">
-                            <div className="pb-10 pl-12">
+                            <div className="py-5 lg:pb-10 lg:px-0 px-10 lg:pl-12">
                                 <h3 className="font-bold">Why do we use it?</h3>
                                 <div className="h-[2px] w-[10%] bg-[#5271FF] rounded-lg my-2" />
                                 <p>
@@ -45,7 +45,7 @@ const IndexPage = () => {
                                     point of using Lorem Ipsum
                                 </p>
                             </div>
-                            <div className="pb-10">
+                            <div className="py-5 lg:px-0 px-10 lg:pb-10">
                                 <h3 className="font-bold">Why do we use it?</h3>
                                 <div className="h-[2px] w-[10%] bg-[#5271FF] rounded-lg my-2" />
                                 <p>
@@ -55,7 +55,7 @@ const IndexPage = () => {
                                     point of using Lorem Ipsum
                                 </p>
                             </div>
-                            <div className="pb-10 pl-12">
+                            <div className="py-5 lg:pb-10 lg:px-0 px-10 lg:pl-12">
                                 <h3 className="font-bold">Why do we use it?</h3>
                                 <div className="h-[2px] w-[10%] bg-[#5271FF] rounded-lg my-2" />
                                 <p>
@@ -74,7 +74,7 @@ const IndexPage = () => {
                             />
                         </div>
                         <div className="flex flex-col items-center justify-center w-full lg:w-1/2">
-                            <div className="pb-10">
+                            <div className="py-5 lg:pb-10 lg:px-0 px-10">
                                 <h3 className="font-bold">Why do we use it?</h3>
                                 <div className="h-[2px] w-[10%] bg-[#5271FF] rounded-lg my-2" />
                                 <p>
@@ -84,7 +84,7 @@ const IndexPage = () => {
                                     point of using Lorem Ipsum
                                 </p>
                             </div>
-                            <div className="pb-10 pl-12">
+                            <div className="py-5 lg:pb-10 lg:px-0 px-10 lg:pl-12">
                                 <h3 className="font-bold">Why do we use it?</h3>
                                 <div className="h-[2px] w-[10%] bg-[#5271FF] rounded-lg my-2" />
                                 <p>
@@ -94,7 +94,7 @@ const IndexPage = () => {
                                     point of using Lorem Ipsum
                                 </p>
                             </div>
-                            <div className="pb-10">
+                            <div className="py-5 lg:pb-10 lg:px-0 px-10">
                                 <h3 className="font-bold">Why do we use it?</h3>
                                 <div className="h-[2px] w-[10%] bg-[#5271FF] rounded-lg my-2" />
                                 <p>
