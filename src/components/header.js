@@ -23,12 +23,6 @@ const Header = () => {
         window.addEventListener("scroll", changeBackground);
     });
 
-    const [isHovered, setIsHovered] = useState(false);
-
-    const handleLinkHover = () => {
-        setIsHovered(!isHovered);
-    };
-
     return (
         <header
             className={`
@@ -46,6 +40,7 @@ bg-white lg:bg-white/90 lg:backdrop-blur-xl shadow-lg"
             >
                 <div className="flex items-center justify-between w-full z-20">
                     <Link
+                        onClick={closeMenu}
                         to="/"
                         className="flex items-center justify-center"
                         title="Logo"
@@ -64,7 +59,7 @@ bg-white lg:bg-white/90 lg:backdrop-blur-xl shadow-lg"
                     </Link>
                     <div className="flex items-center justify-center space-x-3 lg:space-x-6 text-gray-800">
                         <ul
-                            className={`absolute h-max w-full top-[99%] left-0 lg:static lg:flex space-y-6 lg:space-y-0 items-center justify-center space-x-3 lg:space-x-4 transition-all text-lg lg:text-base ${
+                            className={`absolute h-max w-full top-[99%] left-0 lg:static lg:flex space-y-6 lg:space-y-0 items-center justify-center lg:space-x-4 transition-all text-lg lg:text-base ${
                                 showMenu
                                     ? "bg-white shadow-xl py-6"
                                     : " -translate-y-[50%] scale-0 lg:scale-100 lg:-translate-y-[0]"
@@ -72,6 +67,7 @@ bg-white lg:bg-white/90 lg:backdrop-blur-xl shadow-lg"
                         >
                             <li>
                                 <Link
+                                    onClick={closeMenu}
                                     to="/o-nas"
                                     aria-label="O Nas"
                                     title="O Nas"
@@ -83,6 +79,7 @@ bg-white lg:bg-white/90 lg:backdrop-blur-xl shadow-lg"
                             <li>
                                 <Link
                                     to="/oferta"
+                                    onClick={closeMenu}
                                     aria-label="Oferta"
                                     title="Oferta"
                                     className="p-2 font-medium"
@@ -92,6 +89,7 @@ bg-white lg:bg-white/90 lg:backdrop-blur-xl shadow-lg"
                             </li>
                             <li>
                                 <Link
+                                    onClick={closeMenu}
                                     to="/galeria"
                                     aria-label="Galeria"
                                     title="Galeria"
@@ -102,6 +100,7 @@ bg-white lg:bg-white/90 lg:backdrop-blur-xl shadow-lg"
                             </li>
                             <li>
                                 <Link
+                                    onClick={closeMenu}
                                     to="/kontakt"
                                     aria-label="Kontakt"
                                     title="Kontakt"
@@ -112,6 +111,7 @@ bg-white lg:bg-white/90 lg:backdrop-blur-xl shadow-lg"
                             </li>
                             <li>
                                 <Link
+                                    onClick={closeMenu}
                                     to="tel:727708275"
                                     aria-label="zadzwoń"
                                     title="Zadzwoń"
