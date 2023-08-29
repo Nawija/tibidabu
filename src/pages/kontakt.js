@@ -9,7 +9,7 @@ const KontaktPage = () => {
         <Layout>
             <TopImg head="Kontakt" />
 
-            <h1 className="text-center px-3 lg:text-5xl md:text-4xl text-3xl mb-20 md:mb-24 font-semibold text-[#5271ff]">Masz pytania? <br/>Chcesz dokonać rezerwacji?</h1>
+            <h1 className="text-center px-3 text-3xl mb-20 md:mb-24 font-bold text-[#5271ff]">Masz pytania? <br/>Chcesz dokonać rezerwacji?</h1>
 
             <section className="flex flex-col lg:flex-row items-start justify-center mx-auto mb-3 max-w-screen-xl px-6">
                 <div className="flex flex-col items-center mx-auto lg:ml-auto justify-center lg:w-1/3 order-1 space-y-6 mt-6 lg:mt-0">

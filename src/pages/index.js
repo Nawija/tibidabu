@@ -29,7 +29,7 @@ const IndexPage = () => {
                     </div>
                 </div>
                 <div className="text-gray-800 text-center lg:pb-12 max-w-screen-xl mx-auto">
-                    <h2 className="text-xl lg:text-3xl font-bold">
+                    <h2 className="text-2xl lg:text-3xl font-bold">
                         Nasza
                         <br />
                         <span className="text-[#5271FF] changeColor">

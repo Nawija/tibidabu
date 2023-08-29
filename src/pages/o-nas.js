@@ -12,7 +12,7 @@ const ONasPage = () => {
             <div class="bg-white pb-6 sm:pb-8 lg:pb-12">
                 <div class="mx-auto max-w-screen-xl px-4 md:px-8">
                     <div class="mb-10 md:mb-16">
-                        <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">
+                        <h2 class="mb-4 text-center text-2xl font-bold text-[#5271ff] md:mb-6 lg:text-3xl">
                             Our Team by the numbers
                         </h2>
 

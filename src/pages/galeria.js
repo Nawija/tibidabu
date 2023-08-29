@@ -10,7 +10,12 @@ const Galeria = () => {
     return (
         <Layout>
             <TopImg head="Galeria" />
-            <div className="flex items-start justify-start max-w-screen-xl mx-auto">
+            <p className="px-4 md:w-1/2 mx-auto text-center pb-20 text-xl text-[#5271ff] font-bold">
+                Glossier echo park pug, church-key sartorial biodiesel
+                vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon
+                party
+            </p>
+            <div className="flex flex-col items-center justify-center lg:flex-row lg:items-start lg:justify-start max-w-screen-xl mx-auto">
                 <GaleriaImg />
                 <div className="w-full lg:w-[25%] my-10 lg:my-0 text-start px-4">
                     <div className="border-2 border-yellow-400 mt-2 p-5 rounded-lg mb-6">
@@ -18,11 +23,7 @@ const Galeria = () => {
                             Dołacz do nas:
                         </p>
                         <div className="space-x-3 my-1">
-                            <Link
-                                target="_blank"
-                                aria-label="Facebook"
-
-                            >
+                            <Link target="_blank" aria-label="Facebook">
                                 <StaticImage
                                     durationFadeIn={600}
                                     alt="facebook"
@@ -33,10 +34,7 @@ const Galeria = () => {
                                     src="../images/facebook.png"
                                 />
                             </Link>
-                            <Link
-                                target="_blank"
-                                aria-label="Instagram"
-                            >
+                            <Link target="_blank" aria-label="Instagram">
                                 <StaticImage
                                     durationFadeIn={600}
                                     alt="instagram"

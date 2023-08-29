@@ -9,6 +9,11 @@ const OfertaPage = () => {
         <Layout>
             <TopImg head="Oferta" />
             <div class="container mx-auto md:px-6 relative">
+                <h1 className="text-center pb-20 md:w-1/2 text-xl mx-auto text-[#5271ff] font-bold">
+                    Glossier echo park pug, church-key sartorial biodiesel
+                    vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf
+                    moon party
+                </h1>
                 <section>
                     <div class="grid px-6 md:px-12 lg:grid-cols-3 xl:px-32">
                         <div class="p-0 py-12">
