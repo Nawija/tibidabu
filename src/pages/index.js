@@ -32,7 +32,9 @@ const IndexPage = () => {
                     <h2 className="text-xl lg:text-3xl font-bold">
                         Nasza
                         <br />
-                        <span className="text-[#5271FF] changeColor">Oferta</span>
+                        <span className="text-[#5271FF] changeColor">
+                            Oferta
+                        </span>
                     </h2>
                     <div className="flex flex-col lg:flex-row items-center justify-center pt-10 text-start">
                         <div className="flex flex-col items-center justify-center w-full lg:w-1/2">
@@ -320,6 +322,43 @@ const IndexPage = () => {
                     <div className="border-[#19C0B6] border-2 border-dashed w-32 h-32 md:w-52 md:h-52 rounded-full  absolute bottom-0 left-0 -z-20 lg:-translate-x-1/2 -translate-x-[82%]" />
                     <div className="border-[#19C0B6] border-2 border-dashed w-80 h-80 rounded-full  absolute top-1/4 right-0 -z-20 lg:translate-x-1/2 translate-x-[82%]" />
                 </section>
+                <div className="bg-white py-6 sm:py-8 lg:py-12">
+                    <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
+                        <div className="flex flex-col overflow-hidden rounded-lg bg-gray-200 sm:flex-row md:h-80">
+                            <div className="order-first h-48 w-full bg-gray-300 sm:order-none sm:h-auto sm:w-1/2 lg:w-2/5">
+                                <StaticImage
+                                    quality={100}
+                                    src="https://images.unsplash.com/photo-1519340241574-2cec6aef0c01?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2848&q=80"
+                                    loading="lazy"
+                                    alt="Photo by Andras Vas"
+                                    className="h-full w-full object-cover object-center"
+                                />
+                            </div>
+
+                            <div className="flex w-full flex-col p-4 sm:w-1/2 sm:p-8 lg:w-3/5">
+                                <h3 className="mb-4 text-xl font-bold text-[#5271FF] md:text-2xl lg:text-4xl">
+                                    Niezapomniana Rozrywka
+                                </h3>
+
+                                <p className="mb-8 max-w-md text-gray-800">
+                                    This is a section of some simple filler
+                                    text, also known as placeholder text. It
+                                    shares some characteristics of a real
+                                    written text.
+                                </p>
+
+                                <div className="mt-auto">
+                                    <a
+                                        href="#"
+                                        className="inline-block rounded-lg bg-white px-8 py-3 text-center text-sm font-semibold text-[gray-800] outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:text-base"
+                                    >
+                                        Skontaktuj sie z nami
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </Layout>
         </>
     );

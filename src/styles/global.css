@@ -7,9 +7,9 @@
 }
 @keyframes changeColor {
     0% {
-        color: #e6b000; /* text-gray-500 */
+        color: #e6b000; 
     }
     100% {
-        color: #5271ff; /* text-blue-500 */
+        color: #5271ff; 
     }
 }

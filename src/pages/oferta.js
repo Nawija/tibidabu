@@ -358,7 +358,7 @@ const OfertaPage = () => {
                 </section>
             </div>
 
-            <section class="text-gray-600 body-font overflow-hidden max-w-screen-xl mx-auto pl-2">
+            <section class="text-gray-700 body-font overflow-hidden max-w-screen-xl mx-auto pl-2">
                 <div class="container px-5 py-24 mx-auto">
                     <div class="-my-8 divide-y-2 divide-gray-100">
                         <div class="py-8 flex flex-wrap md:flex-nowrap">
